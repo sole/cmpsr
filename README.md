@@ -6,6 +6,7 @@ we'll see...
 
 - chords (using names)
 - bpm / tempo names (piano, andante, etc)
+- rhythms / auto arrangement a la casio?
 - notes
 - midi export/import
 - web midi api
