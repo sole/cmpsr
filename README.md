@@ -20,6 +20,9 @@ we'll see...
 - clipboard
     - is there an api?
     - copy and paste capture (?)
+- architecture
+    - client
+    - server
 
 ## Nothing else to see here
 
