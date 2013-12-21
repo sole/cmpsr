@@ -23,6 +23,12 @@ we'll see...
 - architecture
     - client
     - server
+- versions
+    - history
+    - comparison
+    - authors
+    - merge? forks?
+    - blame?
 
 ## Nothing else to see here
 
