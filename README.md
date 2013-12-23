@@ -35,6 +35,8 @@ we'll see...
 - web midi api
 - different views, same note data
     - tracker
+        <cmpsr-pattern></cmpsr-pattern>
+            tracks --> 1+ columns ~~ note/effect lanes? <--> one instrument only (simpler)
     - notes (staff)
     - piano roll
 - clipboard
