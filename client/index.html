@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>cmpsr</title>
+		<link rel="stylesheet" href="lib/brick/brick-0.9.2.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<x-layout>
+			<x-appbar>cmpsr</x-appbar>
+			<x-deck>
+				<x-card>General</x-card>
+				<x-card>Pattern</x-card>
+				<x-card>Piano roll</x-card>
+			</x-deck>
+			<!--<footer>done</footer>-->
+			<x-tabbar>
+				<x-tabbar-tab target-selector="x-deck x-card:first-child">General</x-tabbar-tab>
+				<x-tabbar-tab target-selector="x-deck x-card:nth-child(2)">Pattern</x-tabbar-tab>
+				<x-tabbar-tab target-selector="x-deck x-card:nth-child(3)">Piano roll</x-tabbar-tab>
+			</x-tabbar>
+		</x-layout>
+		<script src="lib/brick/brick-0.9.2.js"></script>
+	</body>
+</html>

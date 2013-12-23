@@ -16,7 +16,7 @@ we'll see...
 - share/fork songs
 - all instruments are pianos (or something that sounds cool)
 - basic midi export
-
+- OFFLINE!!! aka has to work on a plane
 
 ## to experiment with
 
