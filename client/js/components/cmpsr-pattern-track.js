@@ -9,9 +9,9 @@ xtag.register('cmpsr-pattern-track', {
 	},
 	accessors: {
 		lines: {
-			attribute: { boolean: true },
 			set: function(v) {
 				console.log('set lines', v);
+				// TODO
 			}
 		}
 	}

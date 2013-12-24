@@ -8,7 +8,7 @@ function testCmpsrPattern() {
 		equal(el.querySelectorAll('cmpsr-pattern-track').length, 8);
 	});
 
-	// Make sure attributes are set when using accessors
+	// Make accessors set things properly
 	test('attributes', function() {
 		var el = document.createElement('cmpsr-pattern');
 		var pairs = [
@@ -18,28 +18,30 @@ function testCmpsrPattern() {
 
 		pairs.forEach(function(pair) {
 
-			var attribute = pair[0];
+			var key = pair[0];
 			var expectedValue = pair[1];
 			
-			el[attribute] = expectedValue;
+			el[key] = expectedValue;
 
-			equal(el[attribute], expectedValue);
-			equal(el.getAttribute(attribute), expectedValue);
+			equal(el[key], expectedValue);
 
 		});
 
 		document.body.appendChild(el);
 	});
 
+	
+	// .tracks actually updates the number of tracks
 	test('children == tracks', function() {
 		var el = document.createElement('cmpsr-pattern');
 
 		el.tracks = 16;
-		equal(el.querySelectorAll('cmpsr-pattern-track').length, 16);
+		equal(el.getTracks().length, 16);
 
 		el.tracks = 8;
-		equal(el.querySelectorAll('cmpsr-pattern-track').length, 8);
+		equal(el.getTracks().length, 8);
 
 	});
+
 
 }

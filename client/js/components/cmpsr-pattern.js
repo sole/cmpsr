@@ -4,32 +4,38 @@ xtag.register('cmpsr-pattern', {
 	// setData( <massive object with data> ) or individual per cell methods? (or both)
 	lifecycle: {
 		created: function() {
+			this.lines = 64;
 			this.tracks = 8;
-			this.innerHTML = '';
-			
-			this.setNumTracks(this.tracks);
 		}
 	},
 	accessors: {
 		lines: {
-			attribute: { },
 			set: function(v) {
-				console.log('set lines', v);
-				// TODO propagate
+				v = parseInt(v, 10);
+				this.dataset.lines = v;
+				this.propagateNumLines(v);
+			},
+			get: function() {
+				return this.dataset.lines;
 			}
 		},
 		tracks: {
-			attribute: { },
 			set: function(v) {
-				console.log('set tracks', v);
-				// TODO propagate
-				this.setNumTracks(parseInt(v, 10));
+				v = parseInt(v, 10);
+				this.dataset.tracks = v;
+				this.setNumTracks(v);
+			},
+			get: function() {
+				return this.dataset.tracks;
 			}
 		}
 	},
 	methods: {
+		getTracks: function() {
+			return this.querySelectorAll('cmpsr-pattern-track');
+		},
 		setNumTracks: function(v) {
-			var trackElements = this.querySelectorAll('cmpsr-pattern-track');
+			var trackElements = this.getTracks();
 			var i;
 			var diff = trackElements.length - v;
 
@@ -38,13 +44,19 @@ xtag.register('cmpsr-pattern', {
 				for(i = diff; i < 0; i++) {
 					var el = document.createElement('cmpsr-pattern-track');
 					this.appendChild(el);
-					// TODO set track num lines
 				}
 			} else {
 				// remove tracks
 				for(i = 0; i < diff; i++) {
 					this.removeChild(this.lastChild);
 				}
+			}
+			this.propagateNumLines(this.lines);
+		},
+		propagateNumLines: function(v) {
+			var trackElements = this.getTracks();
+			for(var i = 0; i < trackElements.length; i++) {
+				trackElements[i].lines = v;
 			}
 		}
 	}
