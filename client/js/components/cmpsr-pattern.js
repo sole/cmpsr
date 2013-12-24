@@ -32,7 +32,7 @@ xtag.register('cmpsr-pattern', {
 	},
 	methods: {
 		getTracks: function() {
-			return this.querySelectorAll('cmpsr-pattern-track');
+			return xtag.query(this, 'cmpsr-pattern-track');
 		},
 		setNumTracks: function(v) {
 			var trackElements = this.getTracks();

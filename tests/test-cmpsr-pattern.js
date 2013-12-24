@@ -26,8 +26,6 @@ function testCmpsrPattern() {
 			equal(el[key], expectedValue);
 
 		});
-
-		document.body.appendChild(el);
 	});
 
 	
@@ -40,7 +38,6 @@ function testCmpsrPattern() {
 
 		el.tracks = 8;
 		equal(el.getTracks().length, 8);
-
 	});
 
 

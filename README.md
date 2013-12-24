@@ -18,6 +18,11 @@ we'll see...
 - basic midi export
 - OFFLINE!!! aka has to work on a plane
 
+### MVP/WIP todos
+
+- 'build' system a la audio-tags so I just have to include a .js and a .css
+- data binding cell<->real data
+
 ## to experiment with
 
 - chords (using names)
@@ -51,6 +56,8 @@ we'll see...
     - authors
     - merge? forks?
     - blame?
+- random ideas while I develop
+    - have track names, auto number them (when adding tracks)
 
 ## Nothing else to see here
 
