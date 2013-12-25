@@ -13,7 +13,11 @@ xtag.register('cmpsr-pattern-track', {
 			set: function(v) {
 				v = parseInt(v, 10);
 				console.log('set lines', v);
+				this.dataset.lines = v;
 				this.setNumLines(v);
+			},
+			get: function() {
+				return this.dataset.lines;
 			}
 		}
 	},

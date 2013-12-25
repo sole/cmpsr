@@ -9,7 +9,7 @@ function testCmpsrPattern() {
 	});
 
 	// Make accessors set things properly
-	test('attributes', function() {
+	test('accessors', function() {
 		var el = document.createElement('cmpsr-pattern');
 		var pairs = [
 			[ 'lines', 32 ],
