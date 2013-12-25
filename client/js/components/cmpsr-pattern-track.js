@@ -4,6 +4,7 @@ xtag.register('cmpsr-pattern-track', {
 	// setData( <massive object with data> ) or individual per cell methods? (or both)
 	lifecycle: {
 		created: function() {
+			this._data = {};
 			this.lines = 64;
 			this.innerHTML = '';
 		}
@@ -13,13 +14,13 @@ xtag.register('cmpsr-pattern-track', {
 			set: function(v) {
 				v = parseInt(v, 10);
 				console.log('set lines', v);
-				this.dataset.lines = v;
+				this._data.lines = v;
 				this.setNumLines(v);
 			},
 			get: function() {
-				return this.dataset.lines;
+				return this._data.lines;
 			}
-		}
+		},
 	},
 	methods: {
 		getCells: function() {
