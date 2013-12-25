@@ -31,7 +31,7 @@ function testCmpsrPatternTrack() {
 
 	// .lines actually updates the number of cells
 	test('children == cells', function() {
-		var el = document.createElement('cmpsr-pattern');
+		var el = document.createElement('cmpsr-pattern-track');
 
 		el.lines = 16;
 		equal(el.getCells().length, 16);
@@ -42,7 +42,7 @@ function testCmpsrPatternTrack() {
 
 	// .noteColumns and .effectColumns actually updates those in the cells
 	test('propagate noteColumns and effectColumns', function() {
-		var el = document.createElement('cmpsr-pattern');
+		var el = document.createElement('cmpsr-pattern-track');
 
 		for(var i = 0; i < 3; i++) {
 			
