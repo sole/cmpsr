@@ -1,3 +1,7 @@
 cmpsr-pattern-cell {
 	display: block;
 }
+
+cmpsr-pattern-cell input + input {
+	margin-left: 2px;
+}

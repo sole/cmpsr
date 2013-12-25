@@ -21,6 +21,8 @@ we'll see...
 ### MVP/WIP todos
 
 - 'build' system a la audio-tags so I just have to include a .js and a .css
+    - .register
+    - move NoteCell, EffectCell out to share + add tests 
 - data binding cell<->real data
 
 ## to experiment with

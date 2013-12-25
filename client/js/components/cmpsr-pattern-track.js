@@ -76,7 +76,7 @@ xtag.register('cmpsr-pattern-track', {
 		setNumEffectColumns: function(v) {
 			var cells = this.getCells();
 			cells.forEach(function(cell) {
-				cell.noteColumns = v;
+				cell.effectColumns = v;
 			});
 		}
 	}

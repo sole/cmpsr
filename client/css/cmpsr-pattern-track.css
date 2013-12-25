@@ -2,3 +2,7 @@ cmpsr-pattern-track {
 	display: inline-block;
 }
 
+cmpsr-pattern-track + cmpsr-pattern-track {
+	margin-left: 6px;
+}
+
