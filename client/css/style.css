@@ -4,3 +4,7 @@ html, body {
 	margin: 0;
 }
 
+x-deck x-card:nth-child(2n) {
+	overflow-y: auto;
+	overflow-x: auto;
+}
