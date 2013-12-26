@@ -20,6 +20,9 @@ we'll see...
 
 ### MVP/WIP todos
 
+- inputs kind of look like a nice believable grid, but can't be selected with the mouse like divs woul
+    - need to show divs and maybe hide them and show input when clicked (not dragged?)
+    - also, when a key is pressed it should use current octave to determine which note to add
 - 'build' system a la audio-tags so I just have to include a .js and a .css
     - .register
     - move NoteCell, EffectCell out to share + add tests 
