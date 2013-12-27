@@ -27,6 +27,14 @@ we'll see...
     - .register
     - move NoteCell, EffectCell out to share + add tests 
 - data binding cell<->real data
+- format research
+    - text based vs binary
+        - text -> easy diff
+        - git based? lots of tools already built
+            - how to hook on that?
+            - a repo per song/project
+            - author email (where each save ~~ 1 commit)
+            - forks are "natural"/understandable (?)
 
 ## to experiment with
 
