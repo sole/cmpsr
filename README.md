@@ -20,6 +20,12 @@ we'll see...
 
 ### MVP/WIP todos
 
+- arrow/tab/mouse clicks -> find which one is the active cell
+    - arrow left right
+    - arrow up down
+    - tab, shift + tab
+- keypress -> "generate" and set note in the grid
+    - later with octave selector
 - inputs kind of look like a nice believable grid, but can't be selected with the mouse like divs woul
     - need to show divs and maybe hide them and show input when clicked (not dragged?)
     - also, when a key is pressed it should use current octave to determine which note to add

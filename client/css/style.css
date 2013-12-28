@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 html, body {
 	height: 100%;
 	padding: 0;
@@ -5,6 +9,17 @@ html, body {
 }
 
 x-deck x-card:nth-child(2n) {
+	display: flex;
+	flex-direction: column;
+}
+
+x-deck x-card:nth-child(2n) cmpsr-pattern {
+	flex: auto;
 	overflow-y: auto;
-	overflow-x: auto;
+	border: 1px solid green;
+}
+
+x-deck x-card:nth-child(2n) div {
+	height: 50px;
+	border: 1px solid red;
 }
