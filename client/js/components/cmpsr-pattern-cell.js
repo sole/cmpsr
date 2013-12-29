@@ -1,4 +1,4 @@
-(function() {
+function register() {
 
 	function NoteCell() {
 		this.note = null;
@@ -116,4 +116,8 @@
 		}
 	});
 
-})();
+}
+
+module.exports = {
+	register: register
+};
