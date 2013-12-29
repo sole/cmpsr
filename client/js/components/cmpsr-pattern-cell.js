@@ -6,6 +6,14 @@
 		this.volume = null;
 	}
 
+	xtag.register('cmpsr-pattern-cell-note', {
+		lifecycle: {
+			created: function() {
+				this.innerHTML = 'a';
+			}
+		}
+	});
+
 	xtag.register('cmpsr-pattern-cell', {
 		// TODO:
 		// setData( <massive object with data> ) or individual per cell methods? (or both)
@@ -35,7 +43,7 @@
 				set: function(v) {
 					v = parseInt(v, 10);
 					this._data.effectColumns = v;
-					// this.setNumEffectColumns(v);
+					// TODO this.setNumEffectColumns(v);
 				},
 				get: function() {
 					return this._data.effectColumns;
@@ -69,7 +77,6 @@
 			},
 
 			updateHTML: function() {
-				var html = '';
 
 				var notes = this._data.notes;
 
@@ -84,7 +91,7 @@
 
 				notes.forEach(function(n) {
 
-					noteFields.forEach(function(f) {
+					/*noteFields.forEach(function(f) {
 						var input = document.createElement('input');
 						input.maxlength = f[1];
 						input.size = f[1];
@@ -94,6 +101,13 @@
 						if(n[ f[0] ] !== null) {
 							input.value = n[ f[0] ];
 						}
+					});*/
+
+					noteFields.forEach(function(f) {
+						var field = document.createElement('cmpsr-pattern-cell-note');
+						field.size = f[1];
+						field.placeholder = f[2];
+						self.appendChild(field);
 					});
 
 				});
