@@ -1,0 +1,24 @@
+{
+	"name": "cmpsr",
+	"version": "0.0.1",
+	"description": "do re mi fa sol",
+	"main": "server/main.js",
+	"directories": {
+		"test": "tests"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/sole/cmpsr.git"
+	},
+	"keywords": [
+		"music"
+		],
+	"author": "sole",
+	"license": "BSD",
+	"bugs": {
+		"url": "https://github.com/sole/cmpsr/issues"
+	}
+}
