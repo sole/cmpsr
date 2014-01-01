@@ -1,4 +1,4 @@
-;(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 function register() {
 
 	function NoteCell() {
@@ -290,7 +290,7 @@ module.exports = {
 	register: register
 };
 
-},{}],4:[function(require,module,exports){
+},{}],"z+UI00":[function(require,module,exports){
 
 function register() {
 
@@ -305,17 +305,7 @@ module.exports = {
 	register: register
 };
 
-},{"./cmpsr-pattern":3,"./cmpsr-pattern-cell":1,"./cmpsr-pattern-track":2}],5:[function(require,module,exports){
-var components = require('./components');
-
-components.register();
-
-window.addEventListener('DOMComponentsLoaded', function() {
-
-	// For now, always show the pattern view first
-	document.querySelector('x-deck').shuffleTo(1);
-
-}, false);
-
-},{"./components":4}]},{},[5])
+},{"./cmpsr-pattern":3,"./cmpsr-pattern-cell":1,"./cmpsr-pattern-track":2}],"Components":[function(require,module,exports){
+module.exports=require('z+UI00');
+},{}]},{},[])
 ;

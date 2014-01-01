@@ -1,4 +1,4 @@
-var components = require('./components');
+var components = require('Components');
 
 components.register();
 
