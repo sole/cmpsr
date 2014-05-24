@@ -13,6 +13,11 @@ we'll see...
     - autosave
     - maybe edit in tracker mode for now only? - slightly off notes need precise quantization/timing in tracker mode ("delay" effect)
 - users (to save/fork)
+	- use emails? for the git thing
+	- simultaneous
+		- private song (default)
+		- "unlisted"
+		- public song
 - share/fork songs
 - all instruments are pianos (or something that sounds cool)
 - basic midi export
