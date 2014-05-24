@@ -17,6 +17,13 @@ we'll see...
 - all instruments are pianos (or something that sounds cool)
 - basic midi export
 - OFFLINE!!! aka has to work on a plane
+- replay/rebuild from zero how the song was built
+	- so have to save all the steps/changes
+		- the biggest hack ever: use git and make a git commit per change
+			- 'changed note'
+			- 'changed instrument parameter'
+	- education!
+	- visualise differences
 
 ### MVP/WIP todos
 
