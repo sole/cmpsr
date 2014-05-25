@@ -14,6 +14,8 @@ we'll see...
     - maybe edit in tracker mode for now only? - slightly off notes need precise quantization/timing in tracker mode ("delay" effect)
 - users (to save/fork)
 	- use emails? for the git thing
+		- anonymous user -> autogenerate random anonymous email, then later if the person joins in associate that email to their account
+			- never repeat anonymous addresses!
 	- simultaneous
 		- private song (default)
 		- "unlisted"
